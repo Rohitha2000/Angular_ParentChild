@@ -1,0 +1,26 @@
+<h1 style= "text-align: center;"> Child Component </h1>
+
+<hr>
+
+<div class="container">
+    <h2> Parent to child data</h2>
+<h4>  Name  : &ensp; {{user1.name}}</h4>
+<h4>  Email : &ensp; {{user1.email}}</h4>
+<h4>  Place : &ensp; {{user1.place}}</h4>
+</div>
+<hr>
+
+<form #myForm="ngForm" (ngSubmit)= "formValues.emit(myForm.value)">
+      <label for="Name">Name : &nbsp; &nbsp; &nbsp;</label>
+       <input type="text"  name="name"  ngModel > <br><br>
+      <label for="Password">Password : </label>
+        <input type="password" name="password"  ngModel >
+        <br><br>
+        <button type="submit">Submit</button>
+    
+
+    </form>
+
+    
+
+
